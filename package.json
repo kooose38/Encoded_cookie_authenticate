@@ -3,13 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node ./db.js && next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "db": "json-server db.json --port 5000"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@types/sqlite3": "^3.1.6",
+    "bcrypt": "^5.0.0",
+    "jsonwebtoken": "^8.5.1",
     "next": "10.0.4",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "sqlite": "^4.0.18",
+    "sqlite3": "^5.0.0",
+    "swr": "^0.3.11"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3"
   }
 }
