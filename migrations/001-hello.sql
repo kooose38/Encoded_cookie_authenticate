@@ -14,6 +14,9 @@ CREATE TABLE Vehicle (
 );
 
 
+INSERT INTO Person (name,email) values('bruno', '@example');
+INSERT INTO Person (name,email) values('kooose', '@gmail');
+
 
 INSERT INTO Vehicle (brand, model, ownerId) values('audi', 'R8', 1);
 INSERT INTO Vehicle (brand, model, ownerId) values('audi', 'R6', 1);
